@@ -1,12 +1,32 @@
 <resources>
-    <string name="app_name">TheSpell</string>
+    <string name="app_name" translatable="false">The Spell</string>
 
-    <string name="start_text">Welcome to \'The Spell\'. Just click the button below for start, choose features and create your unique spell!</string>
-    <string name="start_button">START</string>
+    <string name="start_text">Welcome to \'The Spell\'. Just click the button below for start, choose features and create your unique spell!</string>ае
     <string name="spellbook">spellbook</string>
-    <string name="credit">Xardas, 2020\nAlpha 0.1</string>
-
-    <string name="choice_description">You are now choosing</string>
-
+    <string name="credit" translatable="false">Xardas, 2020\nAlpha 0.3</string>
     <string name="write_to_spellbook">Write to spellbook</string>
+    <string name="start_button">start</string>
+    <string name="choose_school">Pick magic school</string>
+    <string name="holy">holy</string>
+    <string name="dark">dark</string>
+    <string name="fire">fire</string>
+    <string name="choose_direction">Pick direction</string>
+    <string name="single">Single target</string>
+    <string name="area">Area</string>
+    <string name="self">On yourself</string>
+    <string name="choose_effect">Pick effect</string>
+    <string name="damage">Damage</string>
+    <string name="amplify">Amplify</string>
+    <string name="creation">Creation</string>
+    <string name="next">next</string>
+    <string name="ice">ice</string>
+    <string name="decrement">Decrement</string>
+    <string name="might">Might</string>
+    <string name="disaster">Disaster</string>
+    <string name="disasterDescription">You caused a Manastorm by your actions, this combination is absolutely terrible!</string>
+    <string name="accident">Accident</string>
+    <string name="accidentDescription">Everything was good until one bad decision. You failed, but for a second appears spell</string>
+    <string name="option">Option</string>
+    <string name="effect">Effect</string>
+    <string name="info">Info</string>
 </resources>

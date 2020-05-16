@@ -1,7 +1,20 @@
 package com.example.thespell;
 
+import android.graphics.drawable.Drawable;
+import java.util.HashMap;
 
 class Spell {
+    private String name;
+    private String description;
+    private String features;
+    private HashMap<String, String> perfectDescription;
+    private int manacost;
+    private int points;
+
+    Spell(){
+        perfectDescription = new HashMap<>();
+    }
+
     public String getName() {
         return name;
     }
@@ -10,33 +23,12 @@ class Spell {
         this.name = name;
     }
 
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
     public String getDiscription() {
-        return discription;
-    }
-
-    public void setDiscription(String discription) {
-        this.discription = discription;
-    }
-
-    private String name;
-    private String discription;
-    private boolean perfectCast;
-
-    Spell(){
-        perfectCast = false;
-    }
-
-    public void setPerfectCast(){
-        perfectCast = true;
-    }
-
-    public int getMight() {
-        return might;
-    }
-
-    public void setMight(int might) {
-        this.might = might;
+        return description;
     }
 
     public int getManacost() {
@@ -47,20 +39,27 @@ class Spell {
         this.manacost = manacost;
     }
 
-    public int getMaxpoints() {
-        return maxpoints;
+    public HashMap<String, String> getPerfectDescription() {
+        return perfectDescription;
     }
 
-    public void setMaxpoints(int maxpoints) {
-        this.maxpoints = maxpoints;
+    public void addToPerfectDescription(String type, String description) {
+        perfectDescription.put(type, description);
     }
 
+    public void setPoints(int points) {
+        this.points = points;
+    }
 
-    private int maxpoints;
-    private int might;
-    private int manacost;
-    //image
-    //sound
+    public int getPoints() {
+        return points;
+    }
 
-    public boolean castisPerfect(){ return perfectCast?true: false; }
+    public String getFeatures() {
+        return features;
+    }
+
+    public void setFeatures(String features) {
+        this.features = features;
+    }
 }
