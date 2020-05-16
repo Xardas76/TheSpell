@@ -1,33 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <features>
-    <choises_number>4</choises_number>
     <feature_class>
-        <name>element</name>
+        <name>school</name>
         <feature>dark</feature>
-        <feature>earth</feature>
         <feature>holy</feature>
         <feature>fire</feature>
-    </feature_class>
-    <feature_class>
-        <name>effect</name>
-        <feature>projection</feature>
-        <feature>strengthening</feature>
-        <feature>annihilation</feature>
-        <feature>restoration</feature>
+        <feature>ice</feature>
     </feature_class>
     <feature_class>
         <name>direction</name>
-        <feature>target</feature>
         <feature>self</feature>
+        <feature>single</feature>
         <feature>area</feature>
-        <feature>region</feature>
-        <feature>world</feature>
     </feature_class>
     <feature_class>
-        <name>power</name>
-        <feature>meager</feature>
-        <feature>significant</feature>
-        <feature>strong</feature>
-        <feature>absolute</feature>
+        <name>effect</name>
+        <feature>damage</feature>
+        <feature>creation</feature>
+        <feature>amplify</feature>
+        <feature>decrement</feature>
     </feature_class>
 </features>

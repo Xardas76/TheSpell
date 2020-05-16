@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTintMode="src_over"
+    android:backgroundTint="@color/alpha60"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/chosen"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/SchoolView"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/DirectionView"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/EffectView"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+
+            android:id="@+id/manaView"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/philosopher"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#009ACF"
+            android:shadowColor="#FFFFFF"
+            android:shadowRadius="4" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragmentFrame"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        />
+
+    <com.animation.animpresseffect.PressEffectButton
+        android:id="@+id/continueButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/dark_button"
+        android:fontFamily="sans-serif"
+        android:visibility="invisible"
+        app:button_duration="200"
+        app:button_scale="0.95" />
+
+
+</LinearLayout>
